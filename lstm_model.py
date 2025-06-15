@@ -69,6 +69,27 @@ def predict_next(model, df, scaler, look_back=60):
 def train_model(model, X_train, y_train, X_test, y_test, epochs=10, batch_size=32):
     model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test), verbose=0)
     model.save("lstm_model.h5")
+    print("✅ Model saved as lstm_model.h5")
 
 def predict(model, X):
     return model.predict(X)
+
+if __name__ == "__main__":
+    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]  # Add more tickers here
+
+    for ticker in tickers:
+        print(f"🚀 Training model for {ticker}")
+        df = fetch_data(ticker)
+        X, y, scaler = prepare_data(df)
+
+        split = int(len(X) * 0.8)
+        X_train, y_train = X[:split], y[:split]
+        X_test, y_test = X[split:], y[split:]
+
+        model = build_model((X_train.shape[1], 1))
+        train_model(model, X_train, y_train, X_test, y_test)
+
+        model_filename = f"{ticker}_lstm_model.h5"
+        model.save(model_filename)
+        print(f"✅ Saved {model_filename}")
+
