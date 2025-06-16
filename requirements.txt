@@ -1,9 +1,9 @@
 streamlit
+streamlit-option-menu
+streamlit-autorefresh
 yfinance
 numpy
 pandas
 plotly
 tensorflow
 scikit-learn
-streamlit-option-menu
-streamlit-autorefresh
