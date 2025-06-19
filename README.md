@@ -11,11 +11,21 @@ To develop a predictive system that analyzes past stock trends to forecast futur
 
 ---
 
+## 🚀 Features
+
+- 🔮 Predict future stock prices using pre-trained **LSTM models**
+- 📊 Live price charts with **MA20 (20-day Moving Average)**
+- 💹 **RSI (Relative Strength Index)** indicator with buy/sell signals
+- 🎨 Interactive charts using **Plotly**
+- 🌐 Deployed using **Render**
+
+---
+
 ## 🛠️ Tools & Technologies
 
 | Tool/Library            | Purpose                                |
 |-------------------------|----------------------------------------|
-| Python 3.12+            | Core programming language              |
+| Python 3.10+            | Core programming language              |
 | Keras / TensorFlow      | Deep learning framework (LSTM model)   |
 | Pandas, NumPy           | Data handling and manipulation         |
 | Matplotlib / Plotly     | Data visualization                     |
@@ -103,3 +113,7 @@ To develop a predictive system that analyzes past stock trends to forecast futur
 └── README.md                # This documentation file
 
 ```
+
+## 🌍 Live Demo
+
+🟢 Deployed at: https://project-snfk.onrender.com/
