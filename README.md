@@ -73,13 +73,19 @@ To develop a predictive system that analyzes past stock trends to forecast futur
 
 * Shows how accurately the LSTM model predicts stock prices based on test data.
 
+![Animated Prediction Plot](https://github.com/Patel-Riya-D/project/blob/main/prediction_plot.png)
+
 # 📍 Moving Average Plot (MA20)
 
 * Displays the 50-day and 100-day moving averages to analyze long-term trends.
 
+![MA20 Plot](https://github.com/Patel-Riya-D/project/blob/main/MA20.png)
+
 # 📍 RSI (Relative Strength Index) Plot
 
 * Helps visualize overbought (above 70) and oversold (below 30) conditions.
+
+![RSI Plot](https://github.com/Patel-Riya-D/project/blob/main/RSI_plot.png)
 
 ## 📁 Project Structure
 
